@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="stylle.css">
+</head>
+<body>
+    <div id="form-container">
+        
+
+    </div>
+    <header>
+        <H1>NETFLIX</H1>
+    </header>
+<br>
+
+    <form action="" id="survey-form" method="GET">
+        <div class="box">
+            <label for="isim">İsim</label><br>
+            <input type="text" name="Kullanıcı ismi" id="isim" placeholder="Adınızı Giriniz"><br>
+        </div>
+        <div class="box">
+            
+            <label for="age">Yaş:</label><br>
+            <input type="number" name="yaş" id="age" placeholder="Yaşınızı giriniz.." required>
+        </div>
+        <div class="box">
+            <label for="mail">Mail</label><br>
+            <input type="email" name="Kullanıcı Maili" id="mail" placeholder="Mailinizi giriniz" required>
+        </div>
+        <div class="box">
+            <label for="tur">Kategori</label><br>
+            <input type="text" name="Tercih Edilen" id="tur" list="Kategori">
+            <datalist id="Kategori">
+                <option value="Serier"></option>
+                <option value="Movie"></option>
+                <option value="Çocuk Filmleri"></option>
+                <option value="Haberler"></option>
+                <option value="Belgesel"></option>
+            
+            </datalist>
+        </div>
+        <div class="box">
+            <label>Film Çeşidini Belirtiniz</label><br>
+            <input type="checkbox" name="film_1" id="Aksiyon" value="Aksiyon">
+            <label for="Aksiyon">Aksiyon</label><br>
+            <input type="checkbox" name="film_2" id="Bilim Kurgu" value="Bilim Kurgu">
+            <label for="Bilim Kurgu">Bilim Kurgu</label><br>
+            <input type="checkbox" name="film_3" id="Komedi" value="Komedi" checked>
+            <label for="Komedi">Komedi</label><br>
+        </div>
+        <div class="box">
+
+            <label for="">Cinsiyet:</label><br>
+            <input type="radio" name="gender" id="gender1" value="Erkek">
+            <label for="gender1">Erkek</label><br>
+            <input type="radio" name="gender" id="gender2" value="Kadın">
+            <label for="gender2">Kadın</label><br>
+            <input type="radio" name="gender" id="gender3" value="Other" checked>
+            <label for="gender3">Other</label>
+        </div>
+        <div class="box">
+            <label for="">Feed Back</label><br>
+            <textarea name="Yorum" id="ta1" cols="30" rows="10" placeholder="Yorum Lütfen"></textarea>
+
+        </div>
+
+        <input type="submit">
+
+    </form>
+    
+    
+</body>
+</html>
